@@ -7,6 +7,7 @@ public class MainMenu : MonoBehaviour
 
 {
    [SerializeField] string ChoseLevel;
+   [SerializeField] string BackToMenu;
 
 
     public void StartGame()
@@ -22,5 +23,11 @@ public class MainMenu : MonoBehaviour
         Debug.Log("Quitting game");
     }
 
+    public void ReturnToMain()
+    {
+        SceneManager.LoadScene(BackToMenu);
+        Time.timeScale = 1f;
+        AudioListener.pause = false;
+    }
 
 }
