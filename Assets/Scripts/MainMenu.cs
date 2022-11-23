@@ -6,12 +6,14 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 
 {
-    public string firstlevel;
+   [SerializeField] string ChoseLevel;
 
 
     public void StartGame()
     {
-        SceneManager.LoadScene(firstlevel);
+        SceneManager.LoadScene(ChoseLevel);
+        Time.timeScale = 1f;
+        AudioListener.pause = false;
     }
 
     public void QuitGame()
@@ -19,4 +21,6 @@ public class MainMenu : MonoBehaviour
         Application.Quit();
         Debug.Log("Quitting game");
     }
+
+
 }
