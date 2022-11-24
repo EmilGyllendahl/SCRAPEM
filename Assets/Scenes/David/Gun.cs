@@ -22,6 +22,7 @@ public class Gun : MonoBehaviour
         Animator = GetComponent<Animator>();
     }
 
+
     public void Shoot()
     {
         if (LastShootTime + ShootDelay < Time.time)
@@ -32,6 +33,7 @@ public class Gun : MonoBehaviour
 
             if (Physics.Raycast(BulletSpawnPoint.position, direction, out RaycastHit hit, float.MaxValue, Mask))
             {
+               
                 TrailRenderer trail = Instantiate(BulletTrail, BulletSpawnPoint.position, Quaternion.identity);
 
                 StartCoroutine(SpawnTrail(trail, hit.point, hit.normal, true));
