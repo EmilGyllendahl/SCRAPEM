@@ -1,5 +1,10 @@
+using System;
 using System.Collections;
+using System.Numerics;
 using UnityEngine;
+using Quaternion = UnityEngine.Quaternion;
+using Random = UnityEngine.Random;
+using Vector3 = UnityEngine.Vector3;
 
 [RequireComponent(typeof(Animator))]
 public class Gun : MonoBehaviour
@@ -16,11 +21,16 @@ public class Gun : MonoBehaviour
 
     private Animator Animator;
     private float LastShootTime;
-
+    
+    /*RECOIL
+    public Vector3 upRecoil;
+    private Vector3 originalRotation;
+    */
+    
     private void Awake()
     {
         Animator = GetComponent<Animator>();
-    }
+    } 
 
 
     public void Shoot()
@@ -33,7 +43,6 @@ public class Gun : MonoBehaviour
 
             if (Physics.Raycast(BulletSpawnPoint.position, direction, out RaycastHit hit, float.MaxValue, Mask))
             {
-               
                 TrailRenderer trail = Instantiate(BulletTrail, BulletSpawnPoint.position, Quaternion.identity);
 
                 StartCoroutine(SpawnTrail(trail, hit.point, hit.normal, true));
@@ -54,7 +63,7 @@ public class Gun : MonoBehaviour
 
     private Vector3 GetDirection()
     {
-        Vector3 direction = transform.forward;
+        Vector3 direction = transform.up;
 
         if (AddBulletSpread)
         {
@@ -93,4 +102,22 @@ public class Gun : MonoBehaviour
 
         Destroy(Trail.gameObject, Trail.time);
     }
+    
+    /*RECOIL that is Fuuuuucked
+
+    private void Start()
+    {
+        originalRotation = transform.localEulerAngles;
+    }
+
+    public void AddRecoil()
+    {
+        transform.localEulerAngles += upRecoil;
+    }
+
+    public void StopRecoil()
+    {
+        transform.localEulerAngles = originalRotation;
+    }
+    */
 }
