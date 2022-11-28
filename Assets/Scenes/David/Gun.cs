@@ -18,6 +18,7 @@ public class Gun : MonoBehaviour
     [SerializeField] private float ShootDelay = 0.5f;
     [SerializeField] private LayerMask Mask;
     [SerializeField] private float BulletSpeed = 100;
+    private AudioSource m_shootingSound;
 
     private Animator Animator;
     private float LastShootTime;
@@ -26,7 +27,12 @@ public class Gun : MonoBehaviour
     public Vector3 upRecoil;
     private Vector3 originalRotation;
     */
-    
+
+    private void Start()
+    {
+        m_shootingSound = GetComponent<AudioSource>();
+    }
+
     private void Awake()
     {
         Animator = GetComponent<Animator>();
@@ -37,6 +43,7 @@ public class Gun : MonoBehaviour
     {
         if (LastShootTime + ShootDelay < Time.time)
         {
+            m_shootingSound.Play();
             Animator.SetBool("IsShooting", true);
             ShootingSystem.Play();
             Vector3 direction = GetDirection();
@@ -120,4 +127,8 @@ public class Gun : MonoBehaviour
         transform.localEulerAngles = originalRotation;
     }
     */
+    
+    //SOUND
+    
+    
 }
