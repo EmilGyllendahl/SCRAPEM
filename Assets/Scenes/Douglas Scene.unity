@@ -876,19 +876,19 @@ PrefabInstance:
         type: 3}
       propertyPath: weapons.Array.data[0]
       value: 
-      objectReference: {fileID: 8990816948585429613, guid: 5bce6ee2259f5fb41978035871d30eee,
+      objectReference: {fileID: 7946046002897379403, guid: 6b87779755d9aaa49aa765003647ce2f,
         type: 3}
     - target: {fileID: 47531349728020847, guid: 79d0ca8b77e301442afdb49f102e8aed,
         type: 3}
       propertyPath: weapons.Array.data[1]
       value: 
-      objectReference: {fileID: 5531657295293760880, guid: d22710acf1d366e43bda30e4544b6d51,
+      objectReference: {fileID: 4150288484583319604, guid: ba32e85d933b086438457734f0b3d36c,
         type: 3}
     - target: {fileID: 47531349728020847, guid: 79d0ca8b77e301442afdb49f102e8aed,
         type: 3}
       propertyPath: weapons.Array.data[2]
       value: 
-      objectReference: {fileID: 7783441878752235531, guid: ca291fc062211ca45abd12376d4b3e09,
+      objectReference: {fileID: 2980297803595834200, guid: dd3a01599e9a6e540832c14b6c8a47f3,
         type: 3}
     - target: {fileID: 261786959625234688, guid: 79d0ca8b77e301442afdb49f102e8aed,
         type: 3}
@@ -913,7 +913,7 @@ PrefabInstance:
     - target: {fileID: 261786959625234688, guid: 79d0ca8b77e301442afdb49f102e8aed,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 287
+      value: 483
       objectReference: {fileID: 0}
     - target: {fileID: 261786959625234688, guid: 79d0ca8b77e301442afdb49f102e8aed,
         type: 3}
@@ -1184,7 +1184,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.34901962}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.27058825}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1195,8 +1195,8 @@ MonoBehaviour:
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
+  m_FillMethod: 0
+  m_FillAmount: 0.523
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
