@@ -1689,6 +1689,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vehicle: {fileID: 332284063}
   ws: {fileID: 676044334}
+  pd: {fileID: 11400000, guid: 72ac009737488b4468028b4429089e6a, type: 2}
 --- !u!114 &1287652314
 MonoBehaviour:
   m_ObjectHideFlags: 0
