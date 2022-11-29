@@ -15,7 +15,6 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene(ChoseLevel);
         Time.timeScale = 1f;
         AudioListener.pause = false;
-        Weapons.DontDestroyOnLoad(gameObject.transform);
     }
 
     public void QuitGame()
