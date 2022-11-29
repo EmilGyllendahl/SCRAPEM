@@ -1,7 +1,9 @@
 using System;
 using System.Collections;
 using System.Numerics;
+using Unity.VisualScripting.Dependencies.Sqlite;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using Quaternion = UnityEngine.Quaternion;
 using Random = UnityEngine.Random;
 using Vector3 = UnityEngine.Vector3;
@@ -41,6 +43,7 @@ public class Gun : MonoBehaviour
 
     public void Shoot()
     {
+        
         if (LastShootTime + ShootDelay < Time.time)
         {
             m_shootingSound.Play();
@@ -55,8 +58,10 @@ public class Gun : MonoBehaviour
                 StartCoroutine(SpawnTrail(trail, hit.point, hit.normal, true));
 
                 LastShootTime = Time.time;
+                
             }
             
+
             else
             {
                 TrailRenderer trail = Instantiate(BulletTrail, BulletSpawnPoint.position, Quaternion.identity);

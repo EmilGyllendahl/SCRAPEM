@@ -8,6 +8,7 @@ public class TireMine : MonoBehaviour
 {
     public GameObject explosionPrefab;
     private AudioSource m_exploadingSound;
+    public MeshRenderer tire;
 
 
 
@@ -38,7 +39,10 @@ public class TireMine : MonoBehaviour
 
     void DestroyTireMine()
     {
-        Destroy(gameObject);
+        //gameObject.SetActive(false);
+        //Destroy(gameObject);
+        tire.enabled = false;
+        
     }
     
     
