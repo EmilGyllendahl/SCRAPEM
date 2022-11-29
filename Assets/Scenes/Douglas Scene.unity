@@ -1223,6 +1223,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vehicle: {fileID: 1290230961}
   ws: {fileID: 232261335}
+  pd: {fileID: 11400000, guid: 72ac009737488b4468028b4429089e6a, type: 2}
 --- !u!1 &1041606486
 GameObject:
   m_ObjectHideFlags: 0
@@ -1368,6 +1369,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1202524327}
   - component: {fileID: 1202524326}
+  - component: {fileID: 1202524328}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -1452,6 +1454,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!114 &1202524328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1202524325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 1
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
 --- !u!1 &1214029656
 GameObject:
   m_ObjectHideFlags: 0
