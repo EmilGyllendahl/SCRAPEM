@@ -45,8 +45,8 @@ GameObject:
   m_Component:
   - component: {fileID: 261786959625234688}
   - component: {fileID: 5135156708204615449}
-  - component: {fileID: 627556911}
   - component: {fileID: 47531349728020847}
+  - component: {fileID: 7603327267570054744}
   m_Layer: 0
   m_Name: Prometheus
   m_TagString: Untagged
@@ -63,8 +63,8 @@ Transform:
   m_GameObject: {fileID: 642287924342879162}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 158.34, y: 158.34, z: 158.34}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 4466888475822015697}
   - {fileID: 6399581921715410368}
@@ -86,59 +86,11 @@ Rigidbody:
   m_Mass: 950
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &627556911
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 642287924342879162}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0fefceefe666bb4682b272ec8c5bdd0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxSpeed: 120
-  maxReverseSpeed: 45
-  accelerationMultiplier: 6
-  maxSteeringAngle: 35
-  steeringSpeed: 0.5
-  brakeForce: 450
-  decelerationMultiplier: 2
-  handbrakeDriftMultiplier: 5
-  bodyMassCenter: {x: 0, y: 0, z: 0}
-  frontLeftMesh: {fileID: 8649133034589738184}
-  frontLeftCollider: {fileID: 2239677824950174677}
-  frontRightMesh: {fileID: 3386343362015136015}
-  frontRightCollider: {fileID: 7877667524431639919}
-  rearLeftMesh: {fileID: 6204759407096980703}
-  rearLeftCollider: {fileID: 8615825633152659129}
-  rearRightMesh: {fileID: 2077481708272809950}
-  rearRightCollider: {fileID: 8706808774334851022}
-  useEffects: 1
-  RLWParticleSystem: {fileID: 4402756320724654539}
-  RRWParticleSystem: {fileID: 4402756320999286479}
-  RLWTireSkid: {fileID: 7045468751846977024}
-  RRWTireSkid: {fileID: 7045468751210077382}
-  useUI: 0
-  carSpeedText: {fileID: 0}
-  useSounds: 0
-  carEngineSound: {fileID: 0}
-  tireScreechSound: {fileID: 0}
-  useTouchControls: 0
-  throttleButton: {fileID: 0}
-  reverseButton: {fileID: 0}
-  turnRightButton: {fileID: 0}
-  turnLeftButton: {fileID: 0}
-  handbrakeButton: {fileID: 0}
-  carSpeed: 0
-  isDrifting: 0
-  isTractionLocked: 0
 --- !u!114 &47531349728020847
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -156,9 +108,58 @@ MonoBehaviour:
   - {fileID: 1759907801813116717}
   - {fileID: 1611775614449213921}
   weapons:
-  - {fileID: 2330068289375488081, guid: 09ebd371086207d4d84c1e4f8a625b0a, type: 3}
-  - {fileID: 950088757702257336, guid: d2e6db3ec5f7c3b4c80f1fe06981fa42, type: 3}
-  - {fileID: 7066446498936602146, guid: 510e3ee6c78001d4597cfa6a1d29bae7, type: 3}
+  - {fileID: 7946046002897379403, guid: 6b87779755d9aaa49aa765003647ce2f, type: 3}
+  - {fileID: 4150288484583319604, guid: ba32e85d933b086438457734f0b3d36c, type: 3}
+  - {fileID: 2980297803595834200, guid: dd3a01599e9a6e540832c14b6c8a47f3, type: 3}
+  pd: {fileID: 11400000, guid: 72ac009737488b4468028b4429089e6a, type: 2}
+--- !u!114 &7603327267570054744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 642287924342879162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0fefceefe666bb4682b272ec8c5bdd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxSpeed: 90
+  maxReverseSpeed: 45
+  accelerationMultiplier: 2
+  maxSteeringAngle: 27
+  steeringSpeed: 0.5
+  brakeForce: 350
+  decelerationMultiplier: 2
+  handbrakeDriftMultiplier: 5
+  bodyMassCenter: {x: 0, y: 0, z: 0}
+  frontLeftMesh: {fileID: 8649133034589738184}
+  frontLeftCollider: {fileID: 2239677824950174677}
+  frontRightMesh: {fileID: 3386343362015136015}
+  frontRightCollider: {fileID: 7877667524431639919}
+  rearLeftMesh: {fileID: 6204759407096980703}
+  rearLeftCollider: {fileID: 8615825633152659129}
+  rearRightMesh: {fileID: 2077481708272809950}
+  rearRightCollider: {fileID: 8706808774334851022}
+  useEffects: 1
+  RLWParticleSystem: {fileID: 4402756320724654539}
+  RRWParticleSystem: {fileID: 4402756320999286479}
+  RLWTireSkid: {fileID: 7045468751846977024}
+  RRWTireSkid: {fileID: 7045468751210077382}
+  useUI: 1
+  carSpeedText: {fileID: 0}
+  useSounds: 1
+  carEngineSound: {fileID: 0}
+  tireScreechSound: {fileID: 0}
+  useTouchControls: 0
+  throttleButton: {fileID: 0}
+  reverseButton: {fileID: 0}
+  turnRightButton: {fileID: 0}
+  turnLeftButton: {fileID: 0}
+  handbrakeButton: {fileID: 0}
+  carSpeed: 0
+  isDrifting: 0
+  isTractionLocked: 0
 --- !u!1 &934883528070179459
 GameObject:
   m_ObjectHideFlags: 0
@@ -425,7 +426,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1611775614449213921}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.065, y: 0.633, z: -2.688}
+  m_LocalPosition: {x: 0.065, y: 0.036, z: -3.37}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -750,7 +751,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5705536446381735225}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.494, y: 1.499, z: -0.051}
+  m_LocalPosition: {x: 0.494, y: 0.979, z: 1.079}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

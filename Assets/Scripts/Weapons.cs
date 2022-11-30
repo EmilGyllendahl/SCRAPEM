@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,6 +7,16 @@ public class Weapons : MonoBehaviour
 {
     public GameObject[] weaponSlots;
     public GameObject[] weapons;
+    public PlayerData pd;
+
+    private void Start()
+    {
+        if (pd.index >= 0 && pd.index < weaponSlots.Length)
+        {
+            SetWeapon(pd.index);          
+        }
+
+    }
 
     public void SetWeapon(int index)
     {

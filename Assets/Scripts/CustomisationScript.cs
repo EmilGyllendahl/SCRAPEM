@@ -1,13 +1,10 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class CustomisationScript : MonoBehaviour
 {
     public GameObject vehicle;
     public Weapons ws;
+    public PlayerData pd;
 
     private void FixedUpdate()
     {
@@ -17,5 +14,6 @@ public class CustomisationScript : MonoBehaviour
     public void WeaponSelected(int index)
     {
         ws.SetWeapon(index);
+        pd.index = index;
     }
 }
