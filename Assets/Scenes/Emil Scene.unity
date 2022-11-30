@@ -2319,7 +2319,7 @@ PrefabInstance:
     - target: {fileID: 7603327267570054744, guid: 79d0ca8b77e301442afdb49f102e8aed,
         type: 3}
       propertyPath: accelerationMultiplier
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8728629746282178721, guid: 79d0ca8b77e301442afdb49f102e8aed,
         type: 3}
