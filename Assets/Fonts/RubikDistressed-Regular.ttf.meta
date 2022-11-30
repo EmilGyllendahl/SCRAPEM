@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ba4fbcb8e8bdf884da2f1327b9749706
+guid: 959c17080d4a5024d8cffd3e62efd31a
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,7 +9,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - 28 Days Later
+  - Rubik Distressed
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
