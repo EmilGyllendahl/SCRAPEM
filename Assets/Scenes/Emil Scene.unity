@@ -3987,7 +3987,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1187786296}
-  m_LocalRotation: {x: 0.1017308, y: -0.00071875914, z: 0.000073501295, w: 0.9948117}
+  m_LocalRotation: {x: 0.1017308, y: -0.0007188292, z: 0.00007350846, w: 0.9948117}
   m_LocalPosition: {x: 0, y: 2.5, z: -6.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5559,7 +5559,7 @@ GameObject:
   - component: {fileID: 1675706867}
   - component: {fileID: 1675706866}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Car Scaler
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6699,7 +6699,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2028704301}
-  m_LocalRotation: {x: 0.1017308, y: -0.000718777, z: 0.00007350312, w: 0.9948117}
+  m_LocalRotation: {x: 0.1017308, y: -0.00071881124, z: 0.00007350661, w: 0.9948117}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
