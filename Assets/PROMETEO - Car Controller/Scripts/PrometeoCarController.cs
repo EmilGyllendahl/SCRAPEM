@@ -19,16 +19,16 @@ public class PrometeoCarController : MonoBehaviour
 
     //CAR SETUP
 
-      [Space(20)]
+      [Space(2000)]
       //[Header("CAR SETUP")]
-      [Space(10)]
-      [Range(20, 190)]
-      public int maxSpeed = 90; //The maximum speed that the car can reach in km/h.
-      [Range(10, 120)]
+      [Space(2000)]
+      [Range(20, 500)]
+      public int maxSpeed = 500; //The maximum speed that the car can reach in km/h.
+      [Range(10, 200)]
       public int maxReverseSpeed = 45; //The maximum speed that the car can reach while going on reverse in km/h.
-      [Range(1, 10)]
-      public int accelerationMultiplier = 2; // How fast the car can accelerate. 1 is a slow acceleration and 10 is the fastest.
-      [Space(10)]
+      [Range(1, 1000)]
+      public int accelerationMultiplier = 1000; // How fast the car can accelerate. 1 is a slow acceleration and 10 is the fastest.
+      [Space(100)]
       [Range(10, 45)]
       public int maxSteeringAngle = 27; // The maximum angle that the tires can reach while rotating the steering wheel.
       [Range(0.1f, 1f)]
