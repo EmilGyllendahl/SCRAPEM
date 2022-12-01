@@ -12,6 +12,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Customize Car scene.unity
     guid: 431a66012c312e74f81997a06606975f
   - enabled: 1
-    path: Assets/Scenes/Emil Scene.unity
-    guid: 9ea50478d81a34140956bafa4d7e73ac
+    path: Assets/Scenes/Main Scene.unity
+    guid: f7e279c3ffdc70f44a37fd046cb567b6
   m_configObjects: {}

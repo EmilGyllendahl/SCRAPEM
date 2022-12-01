@@ -11,13 +11,13 @@ public class PlayerAction : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetKey(KeyCode.V))
+        if (Input.GetKey(KeyCode.Mouse0))
         {
             GetComponent<Gun>().Shoot();
 
         }
 
-        if (Input.GetKeyDown(KeyCode.C))
+        if (Input.GetKeyDown(KeyCode.F))
         {
             Instantiate(TireMine, transform.position - new Vector3(0, 0, 3), quaternion.identity);
         }

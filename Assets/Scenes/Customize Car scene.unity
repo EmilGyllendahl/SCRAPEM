@@ -2580,7 +2580,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51f2f93c3e60d7749bd952a8ccaecdc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChoseLevel: Emil Scene
+  ChoseLevel: Main Scene
   BackToMenu: Main Menu
 --- !u!114 &2048643886
 MonoBehaviour:
