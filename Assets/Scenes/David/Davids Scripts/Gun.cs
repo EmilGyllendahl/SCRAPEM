@@ -54,10 +54,16 @@ public class Gun : MonoBehaviour
             if (Physics.Raycast(BulletSpawnPoint.position, direction, out RaycastHit hit, float.MaxValue, Mask))
             {
                 TrailRenderer trail = Instantiate(BulletTrail, BulletSpawnPoint.position, Quaternion.identity);
+                
 
                 StartCoroutine(SpawnTrail(trail, hit.point, hit.normal, true));
 
                 LastShootTime = Time.time;
+
+                if (hit.collider.CompareTag("Barrel"))
+                {
+                    hit.collider.GetComponent<Explosion>().Expload();
+                }
                 
             }
             
