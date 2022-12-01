@@ -630,19 +630,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 499984939}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1287652313}
-        m_TargetAssemblyTypeName: CustomisationScript, Assembly-CSharp
-        m_MethodName: WeaponSelected
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &499984939
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2444,12 +2432,12 @@ PrefabInstance:
     - target: {fileID: 5639289614297162575, guid: 873e6e5d339a96143b8be5c855c5dd12,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -710.99994
+      value: -711
       objectReference: {fileID: 0}
     - target: {fileID: 5639289614297162575, guid: 873e6e5d339a96143b8be5c855c5dd12,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -392
+      value: -392.00003
       objectReference: {fileID: 0}
     - target: {fileID: 5639289614297162575, guid: 873e6e5d339a96143b8be5c855c5dd12,
         type: 3}
@@ -3325,7 +3313,7 @@ PrefabInstance:
     - target: {fileID: 801903073968920413, guid: 31f9f77b40488954b80210bfe43f0e26,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -395
+      value: -395.00003
       objectReference: {fileID: 0}
     - target: {fileID: 801903073968920413, guid: 31f9f77b40488954b80210bfe43f0e26,
         type: 3}
