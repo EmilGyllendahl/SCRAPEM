@@ -116,7 +116,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionPrefab: {fileID: 1121192042590650, guid: e1b08032bec16ba4eb1ae23cbd572664,
     type: 3}
-  tire: {fileID: 0}
+  tire: {fileID: 5214487580795812902}
 --- !u!82 &6485517439676832450
 AudioSource:
   m_ObjectHideFlags: 0

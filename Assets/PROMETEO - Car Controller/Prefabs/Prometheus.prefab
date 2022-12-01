@@ -48,9 +48,10 @@ GameObject:
   - component: {fileID: 47531349728020847}
   - component: {fileID: 7603327267570054744}
   - component: {fileID: 9012819248984478689}
+  - component: {fileID: 2605673175891350234}
   m_Layer: 0
   m_Name: Prometheus
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -176,6 +177,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TireMine: {fileID: 46981499081221289, guid: b427fe0cd54bb604bbe3d9c782a58a04, type: 3}
   MineDrop: {fileID: 5408806536994107848}
+--- !u!65 &2605673175891350234
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 642287924342879162}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.7725441, z: 4.94676}
+  m_Center: {x: 6.9160346e-17, y: 0.9690963, z: -0.03611672}
 --- !u!1 &934883528070179459
 GameObject:
   m_ObjectHideFlags: 0
@@ -442,7 +456,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1611775614449213921}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.054, y: 0.036, z: -3.448}
+  m_LocalPosition: {x: 0.578, y: 0.036, z: -3.448}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
