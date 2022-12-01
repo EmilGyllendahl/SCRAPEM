@@ -22,25 +22,21 @@ public class Explosion : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter (Collision col)
+    public void Expload()
     {
-        if (col.gameObject.CompareTag("Exploading"))
-        {
-            Debug.Log("Start barrel explosion");
-            m_exploadingSound.Play();
-            Instantiate(explosionPrefab, transform.position, quaternion.identity);
-            Invoke("DestroyExploading", .1f); 
-        }
-        
+        m_exploadingSound.Play();
+        Instantiate(explosionPrefab, transform.position, quaternion.identity);
+        this.enabled = false;
+        exploadingBarrel.enabled = false;
+        Invoke("DestroyExploading", 1f);
+
     }
     
 
     void DestroyExploading()
     {
-        exploadingBarrel.enabled = false;
-        //Destroy(gameObject);
+        Destroy(gameObject);
     }
-
    
     
 }
