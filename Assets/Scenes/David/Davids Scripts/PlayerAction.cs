@@ -19,7 +19,7 @@ public class PlayerAction : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.F))
         {
-            Instantiate(TireMine, transform.position - new Vector3(0, 0, 3), quaternion.identity);
+            Instantiate(TireMine, transform.position - new Vector3(-4f, 1.25f, -0.5f), quaternion.identity);
         }
     }
 }
