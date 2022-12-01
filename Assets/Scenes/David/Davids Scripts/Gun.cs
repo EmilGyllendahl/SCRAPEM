@@ -60,7 +60,7 @@ public class Gun : MonoBehaviour
 
                 LastShootTime = Time.time;
 
-                if (hit.collider.CompareTag("Barrel"))
+                if (hit.collider.CompareTag("Exploading"))
                 {
                     hit.collider.GetComponent<Explosion>().Expload();
                 }
