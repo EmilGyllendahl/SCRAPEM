@@ -47,6 +47,7 @@ GameObject:
   - component: {fileID: 5135156708204615449}
   - component: {fileID: 47531349728020847}
   - component: {fileID: 7603327267570054744}
+  - component: {fileID: 9012819248984478689}
   m_Layer: 0
   m_Name: Prometheus
   m_TagString: Untagged
@@ -161,6 +162,20 @@ MonoBehaviour:
   carSpeed: 0
   isDrifting: 0
   isTractionLocked: 0
+--- !u!114 &9012819248984478689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 642287924342879162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9564ea09622424a47bccd4c47cccaca9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TireMine: {fileID: 46981499081221289, guid: b427fe0cd54bb604bbe3d9c782a58a04, type: 3}
+  MineDrop: {fileID: 5408806536994107848}
 --- !u!1 &934883528070179459
 GameObject:
   m_ObjectHideFlags: 0
